@@ -353,7 +353,9 @@
         <tr>
 		  <td class="EcdBar Al pL10">
 			<% if (barcode_render_engine == 'bmp') { %>
-			  <div class="barcode"/>
+			  <div>
+                <img style="height:50px; width:400px;" src="data:image/bmp;base64,<%= barcode_data %>" />
+              </div>
 			<% } else if (barcode_render_engine == 'img') { %>
 			  <div class="barcode">
 				<% var black = true; %>
